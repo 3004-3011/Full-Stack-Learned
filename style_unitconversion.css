@@ -115,6 +115,7 @@ button:hover {
 legend {
     font-size: 30px;
     font-weight: bolder;
+    font-color: rgb(256,256,256); 
 }
 
 /* Floating icon for the home button */
