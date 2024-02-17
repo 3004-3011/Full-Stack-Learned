@@ -117,7 +117,7 @@
         </div>
         <div id="go-home">
             <a href="#home">
-                <img src ="https://static.vecteezy.com/system/resources/previews/000/568/450/original/home-icon-vector.jpg"/>
+                <img src ="https://static.vecteezy.com/system/resources/previews/000/568/450/original/home-icon-vector.jpg" width= "20px"/>
             </a>
         </div>
         <footer>This is Jainil's Unit conversion module created but learned from IBM & Coursera. Just for demo & non profit purposes. </footer>
