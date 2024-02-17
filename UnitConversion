@@ -98,7 +98,7 @@
                             var kilosValue = parseFloat(kilosInput.value);
 
                             if (!isNaN(kilosValue)) {
-                                var poundsResult = kilosValue*2.205
+                                var poundsResult = kilosValue*2.205;
                                 poundsOutput.value = poundsOutput.toFixed(2);
                             } else {
                                 alert("Please enter a valid number in KG.");
