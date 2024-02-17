@@ -1,4 +1,4 @@
-/* sets the margin of all the element to 10px on all sides and the background-color to black */
+e/* sets the margin of all the element to 10px on all sides and the background-color to black */
 body{
     margin: 10px;
     background-color: rgb(200,200,200);
@@ -21,7 +21,7 @@ body{
   header {
     font-size: 30px;
     color: rgb(240, 234, 245);
-    float: left;
+    float: center;
     padding-left: 2cm;
   }
 
@@ -36,7 +36,7 @@ body{
   .topmenu {
     color: lightgray;
     background-color:   #483355;
-    margin: 10px;
+    margin: 15px;
     padding: 10px;
     font-size: 20px;
     text-decoration:none;
