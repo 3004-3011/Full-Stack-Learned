@@ -37,7 +37,7 @@
                             <input type="number" id="c"> <br/>
                           
                             <!-- The conversion button -->
-                            <button id="temperature"> Convert </button> <br/>
+                            <button id="temperature" onclick="convertTemp()"> Convert </button> <br/>
                           
                             <!-- Label for Temperature output -->
                             <input type="number" id="f"> <br/>
@@ -45,6 +45,20 @@
                             <label for="Temperature">Fahrenheit</label>
                           </fieldset>  
                     </article>
+                    <script>
+                        function convertTemp() {
+                            var celsiusInput = document.getElementById('c');
+                            var fahrenheitOutput = document.getElementById('f');
+                            var celsiusValue = parseFloat(celsiusInput.value);
+
+                            if (!isNaN(celsiusValue)) {
+                                var fahrenheitResult = (celsiusValue * 9/5) + 32;
+                                fahrenheitOutput.value = fahrenheitResult.toFixed(2);
+                            } else {
+                                alert("Please enter a valid temperature value in Celsius.");
+                            }
+                        }
+                    </script>
                     <aside>
                         To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
                     </aside>
