@@ -83,7 +83,7 @@
                             <input type="number" id="kg"> <br/>
             
                             <!-- The conversion button -->
-                            <button id="weight"> Convert </button> <br/>
+                            <button id="weight" onclick="convertWgt()"> Convert </button> <br/>
             
                             <!-- Label for Weight output -->
                             <input type="number" id="lbs"> <br/>
@@ -91,6 +91,20 @@
                             <label for="Weight">Pounds</label>
                         </fieldset>
                     </article>
+                    <script>
+                        function convertWgt() {
+                            var kilosInput = document.getElementById('kg');
+                            var poundsOutput = document.getElementById('lbs');
+                            var kilosValue = parseFloat(kilosInput.value);
+
+                            if (!isNaN(kilosValue)) {
+                                var poundsResult = kilosValue*2.205
+                                poundsOutput.value = poundsOutput.toFixed(2);
+                            } else {
+                                alert("Please enter a valid number in KG.");
+                            }
+                        }
+                    </script>
             
                     <aside>
                         To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
