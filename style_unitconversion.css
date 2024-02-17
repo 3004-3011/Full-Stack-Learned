@@ -8,6 +8,7 @@ body{
 
 #home {
     background-color:  #483355;
+    text-alignment: center;
     padding-bottom: 1cm;
     margin-left:-1cm;
     margin-right:-1cm;
@@ -21,14 +22,14 @@ body{
   header {
     font-size: 30px;
     color: rgb(240, 234, 245);
-    float: center;
+    float: left;
     padding-left: 2cm;
   }
 
 /* Navigation Bar Container*/
 
   .topdiv {
-    float: right;
+    float: center;
     padding-right: 1cm;
   }
   
